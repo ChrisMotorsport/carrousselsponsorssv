@@ -1,0 +1,28 @@
+CARROUSEL KAPPS
+
+Fonctionnement :
+- Une image différente toutes les 5 secondes
+- Transition en fondu
+- Fond transparent
+- Les images gardent leurs proportions
+
+Hébergement GitHub Pages :
+1. Crée un dépôt public sur GitHub.
+2. Envoie index.html et le dossier images à la racine du dépôt.
+3. Dans Settings > Pages :
+   - Source : Deploy from a branch
+   - Branch : main
+   - Dossier : / (root)
+4. Clique sur Save.
+5. Après quelques minutes, GitHub fournit une adresse du type :
+   https://tonpseudo.github.io/nom-du-depot/
+
+Dans Kapps :
+- Ajoute une Browser App / source web.
+- Colle l'adresse GitHub Pages.
+- Mets la largeur et la hauteur adaptées à ton overlay.
+
+Pour modifier le délai :
+- Ouvre index.html.
+- Remplace 5000 par le nombre de millisecondes souhaité.
+  Exemple : 8000 = 8 secondes.

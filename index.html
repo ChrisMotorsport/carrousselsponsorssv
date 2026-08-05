@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carrousel Kapps</title>
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background: transparent;
+    }
+
+    .carousel {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .carousel img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      opacity: 0;
+      transition: opacity 0.8s ease-in-out;
+    }
+
+    .carousel img.active {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="carousel">
+    <img src="01-grid-and-go.png" class="active" alt="">
+    <img src="02-pasta-bianca.png" alt="">
+    <img src="03-partner-1.png" alt="">
+    <img src="04-scuderia.png" alt="">
+    <img src="05-rs-simulation.png" alt="">
+  </div>
+
+  <script>
+    const images = [...document.querySelectorAll(".carousel img")];
+    let current = 0;
+
+    setInterval(() => {
+      images[current].classList.remove("active");
+      current = (current + 1) % images.length;
+      images[current].classList.add("active");
+          }, 5000);
+  </script>
+</body>
+</html>
