@@ -73,6 +73,21 @@
   </div>
 
   <script>
+    const params = new URLSearchParams(window.location.search);
+    const bgOpacityParam = params.get("bgOpacity");
+
+    if (bgOpacityParam !== null) {
+      const parsedOpacity = Number.parseFloat(bgOpacityParam);
+
+      if (Number.isFinite(parsedOpacity)) {
+        const clampedOpacity = Math.min(1, Math.max(0, parsedOpacity));
+        document.documentElement.style.setProperty(
+          "--theme-bg-color",
+          `hsla(0, 0%, 6%, ${clampedOpacity})`
+        );
+      }
+    }
+
     const images = [...document.querySelectorAll(".carousel img")];
     let current = 0;
 
@@ -80,7 +95,8 @@
       images[current].classList.remove("active");
       current = (current + 1) % images.length;
       images[current].classList.add("active");
-          }, 5000);
+    }, 5000);
   </script>
+
 </body>
 </html>
