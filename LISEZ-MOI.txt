@@ -1,15 +1,18 @@
-VERSION KAPPS — OPACITÉ 70 %
+CARROUSEL — THÈME OFFICIEL WEATHERAPP KAPPS
 
-Réglages appliqués :
-- fond à 70 % d'opacité ;
-- saturation et luminosité neutres ;
-- rayon des coins : 6 px ;
-- léger flou de fond ;
-- rotation des logos toutes les 5 secondes.
+Valeurs reprises :
+- Fond : hsla(0, 0%, 6%, 0.7)
+- Rayon : 6 px
+- Aucun dégradé
+- Aucune ombre
+- Aucun effet de flou
+- Aucun glassmorphism
 
-Pour mettre à jour GitHub :
-1. Add file > Upload files.
-2. Envoie tous les fichiers de cette archive.
-3. Commit changes.
-4. Ouvre ensuite :
-   https://chrismotorsport.github.io/carrousselsponsorssv/?v=4
+Mise à jour GitHub :
+1. Ouvre le dépôt carrousselsponsorssv.
+2. Add file > Upload files.
+3. Envoie tous les fichiers de cette archive.
+4. Commit changes.
+5. Attends 30 à 60 secondes.
+6. Teste avec :
+   https://chrismotorsport.github.io/carrousselsponsorssv/?v=6
