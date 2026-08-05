@@ -1,28 +1,22 @@
-CARROUSEL KAPPS
+VERSION KAPPS STYLE
 
-Fonctionnement :
-- Une image différente toutes les 5 secondes
-- Transition en fondu
-- Fond transparent
-- Les images gardent leurs proportions
+Cette version ajoute :
+- un fond sombre semi-transparent inspiré des overlays Kapps ;
+- un léger flou type verre ;
+- une fine bordure ;
+- des coins arrondis ;
+- une ombre discrète ;
+- le changement de sponsor toutes les 5 secondes.
 
-Hébergement GitHub Pages :
-1. Crée un dépôt public sur GitHub.
-2. Envoie index.html et le dossier images à la racine du dépôt.
-3. Dans Settings > Pages :
-   - Source : Deploy from a branch
-   - Branch : main
-   - Dossier : / (root)
-4. Clique sur Save.
-5. Après quelques minutes, GitHub fournit une adresse du type :
-   https://tonpseudo.github.io/nom-du-depot/
+Mise à jour sur GitHub :
+1. Ouvre ton dépôt carrousselsponsorssv.
+2. Clique sur Add file > Upload files.
+3. Envoie tous les fichiers de cette archive.
+4. GitHub signalera que index.html existe déjà : remplace-le.
+5. Clique sur Commit changes.
+6. Patiente environ 30 secondes, puis recharge :
+   https://chrismotorsport.github.io/carrousselsponsorssv/
 
-Dans Kapps :
-- Ajoute une Browser App / source web.
-- Colle l'adresse GitHub Pages.
-- Mets la largeur et la hauteur adaptées à ton overlay.
-
-Pour modifier le délai :
-- Ouvre index.html.
-- Remplace 5000 par le nombre de millisecondes souhaité.
-  Exemple : 8000 = 8 secondes.
+Si Kapps garde l'ancienne version :
+- ferme et rouvre la Browser App ;
+- ou ajoute temporairement ?v=2 à la fin de l'URL.
