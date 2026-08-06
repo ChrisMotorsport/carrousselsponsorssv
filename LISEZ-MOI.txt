@@ -1,21 +1,22 @@
-CARROUSEL KAPPS — OPACITÉ DYNAMIQUE
+CARROUSEL SPONSORS — VERSION PROPRE
 
-Cette version lit réellement le paramètre bgOpacity dans l'URL.
+Contenu :
+- index.html neuf
+- 5 logos
+- changement toutes les 5 secondes
+- transition en fondu
+- fond Kapps : hsla(0, 0%, 6%, 0.8)
+- rayon : 6 px
+- paramètre dynamique bgOpacity
 
 Exemples :
-- 80 % :
-  https://chrismotorsport.github.io/carrousselsponsorssv/?bgOpacity=0.8
-
-- 50 % :
-  https://chrismotorsport.github.io/carrousselsponsorssv/?bgOpacity=0.5
-
-- 30 % :
-  https://chrismotorsport.github.io/carrousselsponsorssv/?bgOpacity=0.3
+https://chrismotorsport.github.io/carrousselsponsorssv/?bgOpacity=0.8
+https://chrismotorsport.github.io/carrousselsponsorssv/?bgOpacity=0.5
+https://chrismotorsport.github.io/carrousselsponsorssv/?bgOpacity=0.3
 
 Mise à jour GitHub :
-1. Add file > Upload files
-2. Envoie tous les fichiers de cette archive
-3. Commit changes
-4. Attends environ 1 minute
-5. Teste avec :
-   https://chrismotorsport.github.io/carrousselsponsorssv/?bgOpacity=0.8&v=7
+1. Décompresse cette archive.
+2. Dans le dépôt GitHub : Add file > Upload files.
+3. Envoie index.html et les 5 PNG.
+4. Commit changes.
+5. Attends la fin du déploiement GitHub Pages.
